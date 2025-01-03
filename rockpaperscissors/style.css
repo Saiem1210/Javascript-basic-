@@ -1,0 +1,81 @@
+/* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styles for the header */
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem; /* Vertically centers text */
+}
+
+/* Styles for choice buttons (rock, paper, scissors) */
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%; /* Makes buttons circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect for choice buttons */
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31; /* Changes background on hover */
+}
+
+/* Styles for images inside choice buttons */
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover; /* Ensures image covers the container */
+    border-radius: 50%; /* Makes images circular */
+}
+
+/* Container for choice buttons */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Spacing between buttons */
+    margin: 3rem;
+}
+
+/* Styles for the score board container */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 2rem; /* Spacing between score elements */
+}
+
+/* Styles for user score */
+#user-score {
+    font-size: 4rem;
+}
+
+/* Common styles for both scores */
+#comp-score, #user-score {
+    font-size: 4rem;
+}
+
+/* Styles for message container */
+.msg-container {
+    margin-top: 3rem;
+}
+
+/* Styles for the message display */
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem; /* Rounds the corners */
+}

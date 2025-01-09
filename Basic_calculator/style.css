@@ -1,0 +1,69 @@
+/* Universal selector: Reset margins, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    width: 100%; /* Set the width to 100% */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-content: center; /* Align content within a flex container */
+    background: linear-gradient(45deg, #0a0a0a, #3a4452); /* Set a gradient background */
+}
+
+/* Container styling */
+.container {
+    border: 1px solid #717377; /* Add a border with specified color */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 16px; /* Round the corners of the container */
+    background-color: transparent; /* Set the background color to transparent */
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5); /* Add a shadow effect */
+}
+
+/* Input field styling */
+input {
+    width: 320px; /* Set the width of the input field */
+    border: none; /* Remove the border */
+    padding: 24px; /* Add padding inside the input field */
+    margin: 10px; /* Add margin outside the input field */
+    background: transparent; /* Set the background color to transparent */
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.3); /* Add a shadow effect */
+    font-size: 40px; /* Set the font size */
+    text-align: right; /* Align the text to the right */
+    cursor: pointer; /* Change the cursor to a pointer */
+    color: #ffffff; /* Set the text color */
+}
+
+/* Placeholder text styling */
+input::placeholder {
+    color: #ffffff; /* Set the placeholder text color */
+}
+
+/* Button styling */
+button {
+    border: none; /* Remove the border */
+    width: 60px; /* Set the width of the button */
+    height: 60px; /* Set the height of the button */
+    margin: 10px; /* Add margin around the button */
+    border-radius: 50%; /* Make the button circular */
+    background: transparent; /* Set the background color to transparent */
+    color: #ffffff; /* Set the text color */
+    font-size: 20px; /* Set the font size */
+    box-shadow: -8px 8px 15px rgba(255, 255, 255, 0.1); /* Add a shadow effect */
+    cursor: pointer; /* Change the cursor to a pointer */
+}
+
+/* Equal button styling */
+.equalbtn {
+    background-color: #fb7c14; /* Set the background color */
+}
+
+/* Operator button styling */
+.operator {
+    color: yellowgreen; /* Set the text color */
+}

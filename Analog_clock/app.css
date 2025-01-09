@@ -1,0 +1,79 @@
+/* Universal selector: Reset margins, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Set a default font family */
+    color: #ffffff; /* Set a default font color */
+}
+
+/* Body styling */
+body {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body is at least 100% of the viewport height */
+    background-color: #212121; /* Set a dark background color */
+    border: 2px solid; /* Add a border (color not specified, default will be used) */
+}
+
+/* Container styling */
+.container {
+    position: relative; /* Position relatively to allow absolute positioning of children */
+}
+
+/* Clock styling */
+.clock {
+    border: 2px solid; /* Add a border (color not specified, default will be used) */
+    width: 300px; /* Set the width of the clock */
+    height: 300px; /* Set the height of the clock */
+    border-radius: 50%; /* Make the clock circular */
+    background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent background color */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9); /* Add a shadow effect */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Clock numbers styling */
+.clock span {
+    position: absolute; /* Position absolutely inside the clock */
+    transform: rotate(calc(30deg * var(--i))); /* Rotate based on custom property --i */
+    inset: 12px; /* Position inward by 12px */
+    text-align: center; /* Center the text inside the span */
+}
+
+/* Clock number text styling */
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i))); /* Rotate text back to upright */
+    display: inline-block; /* Ensure the transform is applied */
+    font-size: 20px; /* Set the font size */
+}
+
+/* Clock center point styling */
+.clock::before {
+    background-color: #ffffff; /* Set the background color of the center point */
+    content: ''; /* Ensure the pseudo-element is displayed */
+    position: absolute; /* Position the pseudo-element absolutely */
+    width: 8px; /* Set the width of the center point */
+    height: 8px; /* Set the height of the center point */
+    border-radius: 50%; /* Make the center point circular */
+    z-index: 3; /* Ensure it appears above other elements */
+}
+
+/* Clock hand styling */
+.hand {
+    position: absolute; /* Position absolutely inside the clock */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-end; /* Align content to the bottom */
+}
+
+/* Clock hand inner element styling */
+.hand i {
+    position: absolute; /* Position absolutely inside the hand */
+    background-color: var(--clr); /* Use custom property --clr for color */
+    width: 4px; /* Set the width of the hand */
+    height: var(--h); /* Use custom property --h for height */
+    border-radius: 8px; /* Round the corners */
+}
